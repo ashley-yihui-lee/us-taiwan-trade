@@ -4,145 +4,52 @@
     <meta charset="utf-8">
     <title>Taiwan Trade with the U.S.</title>
     <link rel="icon" type="image/png" href="icons/taiwan.png">
-    <!-- Link to Google Fonts for Josefin Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
     <style>
-        /* General reset and font family */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            background-color: #f4f7fb;
-            font-family: 'Josefin Sans', sans-serif;
-            color: #2c3e50;
-            line-height: 1.6;
-            padding: 0 15px;
-        }
-
-        h1, h3 {
+            margin: 0;
+            background-color: WhiteSmoke;
+            font-family: 'Lexend Deca', sans-serif;
             color: #00375C;
-            font-weight: 700;
         }
-
-        /* Main container for centering content */
+        /* Make the page 700px wide, centered */
         .container {
-            max-width: 900px;
-            margin: 3em auto;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            padding: 2em;
+            width: 700px;
+            margin: 4em auto;
         }
-
-        /* Header section styling */
         h1 {
             text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
+            font-size: 2em;
+            margin: 2em 0;
         }
-
-        h3 {
-            text-align: center;
-            font-size: 1.3em;
-            margin-bottom: 1.5em;
-            color: #34495e;
-        }
-
-        /* Paragraph styling */
-        p {
-            font-size: 1.1em;
-            margin-bottom: 2em;
-            text-align: center;
-        }
-
-        /* Link styling */
-        a {
-            color: #18a1cd;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Styling for the iframe (chart) */
         .graphic {
-            text-align: center;
-            margin-bottom: 2em;
+            max-width: 600px;
+            margin: 2em auto;
         }
-
-        iframe {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Footer section */
         #footer {
             text-align: center;
+            padding: 4em;
             background-color: #f0f1ff;
-            padding: 2em;
-            margin-top: 3em;
-            border-top: 5px solid #dcdff5;
+            border-top: solid white 5px;
         }
-
-        #footer p {
-            font-size: 0.9em;
-            color: #7f8c8d;
+        a {
+            color: #18a1cd;
+            text-decoration: none; /* Optional: removes the underline */
         }
-
-        /* Responsive design for mobile */
-        @media (max-width: 768px) {
-            .container {
-                padding: 1.5em;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            h3 {
-                font-size: 1.1em;
-            }
+        a:hover {
+            text-decoration: underline; /* Optional: adds underline on hover */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🇹🇼 Taiwan Trade with the U.S. 🇺🇸</h1>
-        <h3>Total value of Taiwan trade in goods (export and import) with the United States from January 2023.</h3>
+        <h1> 🇹🇼 Taiwan Trade with the U.S. 🇺🇸 </h1>
+        <h3> Total value of Taiwan trade in goods (export and import) with the United States from January 2023. </h3>
         <p>The table below auto-updates every month. Trade numbers are using the <a href="https://www.trade.gov.tw/Pages/Detail.aspx?nodeID=1375&pid=790878&dl_DateRange=all&txt_SD=&txt_ED=&txt_Keyword=&pageindex=1&history=">Import and Export Statistics from International Trade Administration of Taiwan</a>.</p>
-        
         <div class="graphic">
-            <iframe title="Taiwan trade (export and import) with the U.S." aria-label="Interactive line chart" id="datawrapper-chart-H6kjY" src="https://datawrapper.dwcdn.net/H6kjY/1/" scrolling="no" frameborder="0" style="width: 100%; height: 410px; border: none;"></iframe>
-            <script type="text/javascript">
-                !function() {
-                    "use strict";
-                    window.addEventListener("message", function(a) {
-                        if (void 0 !== a.data["datawrapper-height"]) {
-                            var e = document.querySelectorAll("iframe");
-                            for (var t in a.data["datawrapper-height"]) {
-                                for (var r = 0; r < e.length; r++) {
-                                    if (e[r].contentWindow === a.source) {
-                                        var i = a.data["datawrapper-height"][t] + "px";
-                                        e[r].style.height = i;
-                                    }
-                                }
-                            }
-                        }
-                    });
-                }();
+            <iframe title="Taiwan trade (export and import) with the U.S." aria-label="Interactive line chart" id="datawrapper-chart-H6kjY" src="https://datawrapper.dwcdn.net/H6kjY/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="410" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
             </script>
         </div>
-    </div>
-
-    <!-- Footer -->
-    <div id="footer">
-        <p>Data provided by the <a href="https://www.trade.gov.tw/">International Trade Administration of Taiwan</a></p>
     </div>
 </body>
 </html>
