@@ -4,70 +4,80 @@
     <meta charset="utf-8">
     <title>Taiwan Trade with the U.S.</title>
     <link rel="icon" type="image/png" href="icons/taiwan.png">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            background: linear-gradient(135deg, #f0f0f0 30%, #ffffff 70%);
-            font-family: 'Lexend Deca', sans-serif;
-            color: #00375C;
+            background-color: #f4f4f4; /* Light background */
+            font-family: 'Lora', serif;
+            color: #333333; /* Dark text for contrast */
             padding: 0 20px;
         }
 
         .container {
-            width: 700px;
+            width: 100%; /* Full width */
+            max-width: 1000px; /* Limit width */
             margin: 4em auto;
             text-align: center;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-            padding: 3em;
         }
 
         h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.5em;
-            color: #007b8a;
+            font-family: 'Lora', serif;
+            font-size: 2.8em;
+            color: #333333;
             margin-bottom: 1em;
+            font-weight: 700;
         }
 
         h3 {
             font-size: 1.2em;
-            color: #5a5a5a;
+            color: #555555;
             margin-bottom: 2em;
         }
 
         p {
-            margin-bottom: 3em; /* Add more space here */
+            margin-bottom: 2em;
+            font-size: 1em;
+            color: #555555;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .graphic {
-            margin-top: 3em; /* Increase this if needed */
+            margin-top: 2em;
+            display: flex;
+            justify-content: center;
         }
 
         #footer {
             text-align: center;
             padding: 2em;
-            background-color: #f0f1ff;
-            border-top: solid white 5px;
+            background-color: #f1f1f1;
+            border-top: solid 1px #ddd;
             margin-top: 3em;
             font-size: 0.9em;
+            color: #555555;
         }
 
         a {
-            color: #18a1cd;
+            color: #333333;
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+            border-bottom: 2px solid transparent;
         }
 
         a:hover {
-            text-decoration: underline;
-            color: #005f7f;
+            color: #000000;
+            border-bottom: 2px solid #333333;
         }
 
         iframe {
             border-radius: 8px;
+            width: 100%;
+            max-width: 700px; /* Adjust the width */
+            height: 410px;
             transition: transform 0.3s ease;
         }
 
@@ -82,7 +92,7 @@
         <h3> Total value of Taiwan trade in goods (export and import) with the United States from January 2023. </h3>
         <p>The table below auto-updates every month. Trade numbers are using the <a href="https://www.trade.gov.tw/Pages/Detail.aspx?nodeID=1375&pid=790878&dl_DateRange=all&txt_SD=&txt_ED=&txt_Keyword=&pageindex=1&history=">Import and Export Statistics from International Trade Administration of Taiwan</a>.</p>
         <div class="graphic">
-            <iframe title="Taiwan trade (export and import) with the U.S." aria-label="Interactive line chart" id="datawrapper-chart-H6kjY" src="https://datawrapper.dwcdn.net/H6kjY/1/" scrolling="no" frameborder="0" style="width: 100%; height: 410px; border: none;"></iframe>
+            <iframe title="Taiwan trade (export and import) with the U.S." aria-label="Interactive line chart" id="datawrapper-chart-H6kjY" src="https://datawrapper.dwcdn.net/H6kjY/1/" scrolling="no" frameborder="0" style="border: none;"></iframe>
         </div>
     </div>
 
