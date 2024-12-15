@@ -3,49 +3,101 @@
 <head>
     <meta charset="utf-8">
     <title>Taiwan Trade with the U.S.</title>
+    <link rel="icon" type="image/png" href="icons/taiwan.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            background-color: Linen;
+            background-color: #f4f4f4; /* Light background */
+            font-family: 'Lora', serif;
+            color: #333333; /* Dark text for contrast */
+            padding: 0 20px;
         }
-        /* Make the page 700px wide, centered */
+
         .container {
-            width: 700px;
+            width: 100%; /* Full width */
+            max-width: 1000px; /* Limit width */
             margin: 4em auto;
-        }
-        /* Use a nice font */
-        body {
-            font-family: "Gill Sans Extrabold", sans-serif;
+            text-align: center;
         }
 
         h1 {
-            text-align: center;
-            font-size: 2em;
-            margin: 2em 0;
+            font-family: 'Lora', serif;
+            font-size: 2.8em;
+            color: #333333;
+            margin-bottom: 1em;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            color: #555555;
+            margin-bottom: 2em;
+        }
+
+        p {
+            margin-bottom: 2em;
+            font-size: 1em;
+            color: #555555;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .graphic {
-            max-width: 500px;
-            margin: 2em auto;
+            margin-top: 2em;
+            display: flex;
+            justify-content: center;
         }
 
         #footer {
             text-align: center;
-            padding: 4em;
-            background-color: #f0f1ff;
-            border-top: solid white 5px;
+            padding: 2em;
+            background-color: #f1f1f1;
+            border-top: solid 1px #ddd;
+            margin-top: 3em;
+            font-size: 0.9em;
+            color: #555555;
+        }
+
+        a {
+            color: #333333;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        a:hover {
+            color: #000000;
+            border-bottom: 2px solid #333333;
+        }
+
+        iframe {
+            border-radius: 8px;
+            width: 100%;
+            max-width: 700px; /* Adjust the width */
+            height: 410px;
+            transition: transform 0.3s ease;
+        }
+
+        iframe:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1> 🇹🇼 Taiwan Trade with the U.S. 🇺🇸 </h1>
-        <h3> Total value of Taiwan trade in goods (export and import) with the United States from January 2023 (in hundred million USD)
-         </h3>
+        <h3> Total value of Taiwan trade in goods (export and import) with the United States from January 2023. </h3>
         <p>The table below auto-updates every month. Trade numbers are using the <a href="https://www.trade.gov.tw/Pages/Detail.aspx?nodeID=1375&pid=790878&dl_DateRange=all&txt_SD=&txt_ED=&txt_Keyword=&pageindex=1&history=">Import and Export Statistics from International Trade Administration of Taiwan</a>.</p>
         <div class="graphic">
-            <iframe title="Taiwan trade (export and import) with the U.S." aria-label="Interactive line chart" id="datawrapper-chart-H6kjY" src="https://datawrapper.dwcdn.net/H6kjY/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="410" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-            </script>
+            <iframe title="Taiwan trade (export and import) with the U.S." aria-label="Interactive line chart" id="datawrapper-chart-H6kjY" src="https://datawrapper.dwcdn.net/H6kjY/1/" scrolling="no" frameborder="0" style="border: none;"></iframe>
         </div>
     </div>
+
+    <div id="footer">
+        <p>Data provided by <a href="https://www.trade.gov.tw">Taiwan International Trade Administration</a></p>
+    </div>
+</body>
 </html>
