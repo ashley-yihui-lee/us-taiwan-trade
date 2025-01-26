@@ -8,7 +8,7 @@ Trade data is sourced from the Import and Export Statistics of Taiwan’s Intern
 - **data diary.ipynb**: Notes on the coding process.
 - **index.html**: Code for the live website [US-Taiwan Trade](https://ashley-yihui-lee.github.io/us-taiwan-trade/), displaying an auto-updating line chart of Taiwan-US trade.
 
--
+
 
 Here are the things I did in this project
 1. Scraping
