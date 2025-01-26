@@ -7,3 +7,23 @@ Trade data is sourced from the Import and Export Statistics of Taiwan’s Intern
 - **taiwan-us-trade.csv**: Cleaned dataframe.
 - **data diary.ipynb**: Notes on the coding process.
 - **index.html**: Code for the live website [US-Taiwan Trade](https://ashley-yihui-lee.github.io/us-taiwan-trade/), displaying an auto-updating line chart of Taiwan-US trade.
+
+-
+
+Here are the things I did in this project
+1. Scraping
+Scrapes the Taiwan’s International Trade Administration website for the latest Taiwan-U.S. trade data.
+Identifies and downloads the relevant Excel file.
+
+2. Cleaning the Data
+Removes unnecessary rows and columns from the dataset.
+Handles missing or improperly formatted data.
+Converts Taiwanese year format (ROC) to the Gregorian calendar.
+Maps month names to standard English abbreviations.
+Filters and organizes the data for the year 2023 onward.
+
+3. Export to CSV
+Outputs the cleaned and processed dataset as taiwan-us-trade.csv.
+
+4. Auto-Update
+Automates the data scraping and processing workflow using GitHub Actions.
